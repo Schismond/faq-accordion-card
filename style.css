@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
   font-family: "Kumbh Sans", sans-serif;
   /* weights : 400 , 700 */
 }
@@ -28,6 +27,7 @@ body {
     var(--soft-blue),
     var(--soft-violet)
   );
+  font-size: 16px;
 }
 
 .container {
@@ -45,6 +45,11 @@ body {
   border-radius: 30px;
   display: flex;
   position: relative;
+}
+
+.pattern-mobile,
+.woman-mobile {
+  display: none;
 }
 
 .illustration {
@@ -98,7 +103,7 @@ h1 {
 
 .hidden-content {
   display: none;
-  color:var(--dark-grayish-blue);
+  color: var(--dark-grayish-blue);
 }
 
 .faq-content {
@@ -124,4 +129,57 @@ button {
 .question {
   color: var(--very-dark-grayish-blue);
   padding-block: 12px;
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    font-size: 12px;
+  }
+  .card {
+    flex-direction: column;
+    width: 90vw;
+    font-size: 12px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .pattern-mobile,
+  .woman-mobile {
+    display: block;
+  }
+
+  .pattern,
+  .lady,
+  .box {
+    display: none;
+  }
+
+  .faq {
+    flex: 1;
+    align-items: flex-end
+  }
+
+  .faq-content {
+    margin: 24px;
+  }
+
+  .illustration {
+    overflow: visible;
+    flex: 0;
+  }
+
+  .pattern-mobile {
+    top: 50px;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+  }
+  .woman-mobile {
+    top: -22px;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+  }
 }
