@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -30,7 +30,7 @@ body {
   );
 }
 
-.container{
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -38,10 +38,79 @@ body {
   align-items: center;
 }
 
-.card{
+.card {
   background-color: white;
   width: 1080px;
   height: 600px;
   border-radius: 30px;
+  display: flex;
+  position: relative;
 }
 
+.illustration {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.illustration > * {
+  position: absolute;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  overflow: visible;
+  z-index: 1;
+}
+
+.lady {
+  top: 21%;
+  left: -19%;
+  width: 550px;
+}
+
+.pattern {
+  top: -35%;
+  left: -95%;
+}
+
+.faq {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--very-desaturated-blue);
+  margin-bottom: 1rem;
+}
+
+.shown-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-grayish-blue);
+  margin-block: 24px;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.faq-content {
+  width: 408px;
+  margin: 12px;
+}
+
+.active{
+  font-weight: 700;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
