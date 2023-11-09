@@ -17,7 +17,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 Check out the live demo of the Order summary card challenge: 
 
-[Github Pages](https://schismond.github.io/faq-accprdion-card/)
+[Github Pages](https://schismond.github.io/faq-accordion-card/)
 OR
 [Netlify](https://schismond-faq-accprdion-card.netlify.app)
 
